@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Bienvenido
+{%endblock%}
+
+
+{% block content%} 
+<div class="hero">
+    <div class="hero-content">
+          <div class="left"> 
+            <h1>Desarrollador</h1>
+            <h1>HELMER IGNACIO MORALES ARANDA</h1>
+            <p> Recién egresado con ganas de seguir aprendiendo, apasionado del machine learning.</p>
+            <a href="#contacto" class="button"> Contáctame</a>
+        </div>
+        <div class="right">
+            <img src="{{url_for('static', filename='img/py.png')}}" width=600px />
+        </div>
+    </div>    
+</div>
+{% include 'portafolio/section-first.html'%}
+{% include 'portafolio/section-second.html'%}
+{% include 'portafolio/section-third.html'%}
+
+
+{%endblock%}
+
