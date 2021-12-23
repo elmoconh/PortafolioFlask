@@ -3,6 +3,7 @@ click
 colorama
 dataclasses
 Flask
+flask
 gunicorn==20.1.0
 importlib-metadata==4.8.2
 itsdangerous==2.0.1
