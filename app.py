@@ -20,5 +20,5 @@ def mail():
         return render_template('portafolio/sent_mail.html')
         
 if __name__ == "__main__":
-	app.run()
+	app.run(debug=True)
     
