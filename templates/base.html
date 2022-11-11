@@ -11,24 +11,22 @@
 <script src="https://kit.fontawesome.com/0b127b2cc8.js" crossorigin="anonymous"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
+
 <script src=" {{url_for('static', filename = 'js/main.js')}}"></script>
 
 
 <body>
-    <header>
-        <div class="logo">
-            HELMER IGNACIO MORALES ARANDA
-        </div>  
-            <nav>
-                <ul>
-                    <li><a href="{{url_for('index')}}">Inicio</a></li>
-                    <li><a href="#contacto"> Contacto</a></li>
-                    <li><a href="mail"> Prueba Send Grid</a></li>
-                    <li> <input id="myButton1" class="button_mode" onclick="change()" type="button" value="Oscuro" id="myButton1">
-                         <i onclick="change_icon(this)" class="fa-regular fa-moon"></i> </input>
-                    </li>
-                </ul>
-            </nav>
+    <header>        
+        <section id="menu">    
+            <ul>
+                <li><a href="{{url_for('index')}}">Inicio</a></li>
+                <li><a href="#contacto"> Contacto</a></li>
+                <!--<li><a href="mail"> Prueba Send Grid</a></li>-->
+                <li> <input id="myButton1" class="button_mode" onclick="change()" type="button" value="Oscuro" id="myButton1">
+                    <i onclick="change_icon(this)" class="fa-regular fa-moon"></i> </input>
+                </li>
+            </ul>
+       </section>
     </header>
 
     <section> 
@@ -36,7 +34,7 @@
         {%endblock%}
     </section> 
 
-    <div class="footer">
+    <div class="footer reveal">
         <div class="center full-width">
             <div class="row">
                 <h3>Contáctame</h3>

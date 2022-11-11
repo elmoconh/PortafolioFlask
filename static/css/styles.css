@@ -1,6 +1,23 @@
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
 html{
     font-family: 'Rufina', sans-serif;
  
+}
+
+header{
+    width: 100%;
+    position: fixed;
 }
 
 body{
@@ -8,7 +25,6 @@ body{
     margin: 0;
     color: #034D6C;
 }
-
 
 .dark-mode {
     background-color: black;
@@ -42,6 +58,16 @@ html body header{
 
 }
 
+#menu{
+    background-color: #fff;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: right;
+    font-weight: 700;
+    width: 100%;
+}
+
 header .logo{
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
@@ -51,16 +77,16 @@ header .logo{
 }
 
 
-html body nav ul{
+html body #menu ul{
     list-style-type: none;
     font-size: 16px;
 }
 
-html body nav ul li{
+html body #menu ul li{
     display: inline-block;
 }
 
-html body nav ul li a{
+html body #menu ul li a{
     padding: 0 15px;
 }
 
@@ -119,8 +145,7 @@ html body nav ul li a{
 }
 
 
-
-
+ 
 a.btn{
     color:#fff;
 }
@@ -277,4 +302,8 @@ a.btn{
 
 
 
-
+.dark-mode #menu{
+    background-color: #3030;
+    color: #fff;
+    width: 100%;
+}
