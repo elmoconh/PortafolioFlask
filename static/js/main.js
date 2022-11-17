@@ -6,6 +6,8 @@ function darkMode() {
  function change()
  {  var elem = document.getElementById("myButton1").value;
     var icon = document.querySelector("i");
+   console.log(elem);
+
 
      if (elem == "Oscuro"){
         document.getElementById("myButton1").value="Claro"; 
@@ -47,3 +49,4 @@ function darkMode() {
   }
   
   window.addEventListener("scroll", reveal);
+  

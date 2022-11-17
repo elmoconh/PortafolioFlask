@@ -21,11 +21,14 @@
             <ul>
                 <li><a href="{{url_for('index')}}">Inicio</a></li>
                 <li><a href="#contacto"> Contacto</a></li>
-                <!--<li><a href="mail"> Prueba Send Grid</a></li>-->
+                <!--<li><a href="mail"> Prueba Send Grid</a></li>
                 <li> <input id="myButton1" class="button_mode" onclick="change()" type="button" value="Oscuro" id="myButton1">
-                    <i onclick="change_icon(this)" class="fa-regular fa-moon"></i> </input>
-                </li>
+                  </input>
+                </li>-->
             </ul>
+            <button onclick="change()" id="myButton1" class="button_mode">
+                <i class="fa-regular fa-moon" ></i>
+            </button>
        </section>
     </header>
 
@@ -52,7 +55,6 @@
             </div>
         </div>
         <div class="made-width">
-            
                 <div class = "right padded">
                     <p class="details"> Hecho por Helmer Morales Aranda Usando</p>
                         <img class="social" height=50 src="{{url_for('static', filename='img/flask.png')}}">
@@ -60,7 +62,6 @@
                         <img class="social" height=50 src="{{url_for('static', filename='img/js.png')}}">
                         <img class="social" height=50 src="{{url_for('static', filename='img/html.jpg')}}">
             </div>
-
         </div>
    </div>   
 </body>
