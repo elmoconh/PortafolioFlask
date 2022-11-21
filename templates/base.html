@@ -21,15 +21,11 @@
             <ul>
                 <li><a href="{{url_for('index')}}">Inicio</a></li>
                 <li><a href="#contacto"> Contacto</a></li>
-                <!--<li><a href="mail"> Prueba Send Grid</a></li>
-                <li> <input id="myButton1" class="button_mode" onclick="change()" type="button" value="Oscuro" id="myButton1">
-                  </input>
-                </li>-->
+                <li><button onclick="change()" id="myButton1" class="button_mode"><i class="fa-regular fa-moon" ></i></button></li>
             </ul>
-            <button onclick="change()" id="myButton1" class="button_mode">
-                <i class="fa-regular fa-moon" ></i>
-            </button>
        </section>
+       <a class="button center" href="{{url_for('download', filename= 'Curriculum.pdf')}}">Descargar <br> Curriculum</a>
+
     </header>
 
     <section> 
@@ -40,18 +36,16 @@
     <div class="footer reveal">
         <div class="center full-width">
             <div class="row">
-                <h3>Contáctame</h3>
+                <h3>Redes Sociales</h3>
             </div>
         </div> 
-        <div class="center full-width">
-            <div class="row">
-                <p>O también puedes seguirme en mis redes sociales</p>
-            </div>
-        </div>
         <div class="center full-width social-links">
             <div class="row">
                 <a href="https://www.facebook.com/ElmoConh/" target="__blank"> <img class="social" height=30 src="{{url_for('static', filename='img/facebook.png')}}"></a>
                 <a href="https://www.linkedin.com/in/helmer-ignacio-morales-aranda/" target="__blank"><img class="social" height=30 src="{{url_for('static', filename='img/linkedin.png')}}"> </a>
+                <a href="https://platzi.com/p/helmer.morales1/" target="_blank"><img class="social" height=30 src="{{url_for('static', filename='img/platzi.png')}}"></a>
+
+
             </div>
         </div>
         <div class="made-width">
