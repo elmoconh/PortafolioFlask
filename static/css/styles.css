@@ -181,6 +181,12 @@ a.btn{
     color: #f84f07;
 }
 
+.green{
+    background-color: #00b300;
+    color: #fff;
+    margin-top: 5%;
+}
+
 .padded{
     padding: 20px 30px;
 }
@@ -314,10 +320,8 @@ a.btn{
     width: 100%;
 }
 
-.wrapper{
-    width: 100%;
-    display: flex;
-    animation: slide 16s infinite;
+.dark-mode #menu ul li a{
+    color: #fff;
 }
 
 
