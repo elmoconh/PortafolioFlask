@@ -14,5 +14,6 @@ COPY . .
 # Expone el puerto que va a usar la aplicación
 EXPOSE 3000
 
+
 # Establece el comando por defecto para ejecutar la aplicación
-CMD ["python", "app.py"]
+CMD python /app/app.py && cowsay "Yo, CMD !!"
